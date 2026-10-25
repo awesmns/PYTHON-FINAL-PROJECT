@@ -321,7 +321,6 @@ def dashboard(user):
     elif page == PAGES[5]:
         page_model(an)
 
-
 if "user" not in st.session_state:
     login_page()
 else:
