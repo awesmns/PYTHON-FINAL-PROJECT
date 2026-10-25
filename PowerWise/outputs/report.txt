@@ -1,0 +1,49 @@
+========================================================================
+POWERWISE REPORT
+========================================================================
+Data: 01 Nov 2024 to 23 Oct 2026 (722 days, hourly readings)
+Average usage: 15.6 kWh/day   Tariff: Rs.7.0/kWh
+
+------------------------------------------------------------------------
+1. USAGE PREDICTION (next 30 days)
+------------------------------------------------------------------------
+Best model         : Random Forest
+Expected usage     : 422 kWh  (range 327 - 517)
+Estimated bill     : Rs.2,955   (last 30 days: Rs.3,080, -4.1%)
+
+Model comparison (rolling back-test over the last 120 days, 4 windows of 30 days):
+                           model   MAE  RMSE  MAPE %     R2
+                   Random Forest 0.947 1.643   5.663  0.201
+               Gradient Boosting 0.959 1.726   5.774  0.118
+                Ridge Regression 1.026 1.734   6.102  0.110
+Naive (same weekday 5 weeks ago) 1.465 2.130   9.357 -0.343
+
+------------------------------------------------------------------------
+2. MONTHLY COMPARISON
+------------------------------------------------------------------------
+October 2026 (so far, 23 days): 341 kWh, about Rs.2,387 (14.8 kWh/day).
+Compared with September 2026: 2.4% higher per day (14.5 -> 14.8 kWh/day).
+Compared with October 2025 (last year): 5.0% higher per day.
+Highest month on record: May 2025 (588 kWh). Lowest: December 2025 (366 kWh).
+
+------------------------------------------------------------------------
+3. PEAK CONSUMPTION ALERTS
+------------------------------------------------------------------------
+[HIGH] Peak spike on 14 Oct 2026 (19:00-21:59)
+    Reached 4.5 kWh in one hour at 19:00 vs 1.4 kWh usual (13.8 standard deviations above normal). Extra energy that day: 9.3 kWh (about Rs.65). Likely a heavy appliance (geyser, oven, iron, AC) used at the same time as other loads.
+[INFO] Peak window is 18:00-21:59
+    33% of your electricity is used in these 4 hours (2.0x the average hour). Moving some usage out of this window lowers peak demand and, with time-of-day tariffs, your bill.
+[MEDIUM] Record-level hourly demand this month
+    Highest hour in the last 30 days: 4.5 kWh, above your usual top 1% (1.7 kWh).
+
+------------------------------------------------------------------------
+4. SAVINGS SUGGESTIONS
+------------------------------------------------------------------------
+1. Cut always-on (stand-by) load  (about Rs.2,290 per year)
+    Between 1 am and 5 am you still use about 0.25 kWh every hour (fridge, router, TV/set-top box, chargers). That is 2,181 kWh a year (38% of your total). Switching off at the plug and replacing an old fridge could trim about 15% of it (327 kWh).
+2. Set the AC 2 degC higher  (about Rs.393 per year)
+    Your usage rises by about 1.06 kWh per day for every degC above 25 degC. Cooling-related use is roughly 467 kWh a year. As a rule of thumb each 1 degC higher AC setting saves about 6%; also use ceiling fans and keep filters clean.
+3. Shift some usage out of 18:00-21:59  (about Rs.1,167 per year)
+    If your utility charges more in peak hours (assumed 1.3x the normal rate), moving 15% of peak-window use (washing machine, dishwasher, water pump, EV/phone charging) to off-peak hours saves about Rs.1,167 a year. Even without such a tariff it lowers peak load on the grid.
+4. Look at weekend usage  (about Rs.143 per year)
+    Weekends use 2.0 kWh/day more than weekdays (17.0 vs 15.1). Run full loads only, avoid leaving lights, fans and TVs on in empty rooms, and spread laundry across the week.

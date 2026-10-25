@@ -1,0 +1,5 @@
+model,MAE,RMSE,MAPE %,R2
+Random Forest,0.947,1.643,5.663,0.201
+Gradient Boosting,0.959,1.726,5.774,0.118
+Ridge Regression,1.026,1.734,6.102,0.11
+Naive (same weekday 5 weeks ago),1.465,2.13,9.357,-0.343
